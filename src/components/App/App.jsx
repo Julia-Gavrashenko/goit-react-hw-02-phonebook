@@ -15,8 +15,11 @@
 //   );
 // };
 
-import { Component } from "react";
-import { ContactForm } from "./ContactForm/ContactForm";
+import { Component } from 'react';
+import { ContactForm } from '../ContactForm/ContactForm';
+import { ContactList } from '../ContactList/ContactList';
+import { GlobalStyle } from '../GlobalStyle';
+import { ContactListTitle, FormTitle } from './App.styled';
 
 export class App extends Component {
   state = {
@@ -34,14 +37,11 @@ export class App extends Component {
   render() {
     return (
       <div>
-      
+        <FormTitle>Phonebook</FormTitle>
         <ContactForm />
-     
-
-        
-        
-     
-       
+        <ContactListTitle>Contacts</ContactListTitle>
+        <ContactList contacts={this.state.contacts} />
+        <GlobalStyle />
       </div>
     );
   }

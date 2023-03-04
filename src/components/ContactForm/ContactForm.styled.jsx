@@ -11,6 +11,7 @@ export const Form = styled(FormikForm)`
   padding: 15px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
 
   background: rgb(244, 237, 237);
   border-radius: 5px;
