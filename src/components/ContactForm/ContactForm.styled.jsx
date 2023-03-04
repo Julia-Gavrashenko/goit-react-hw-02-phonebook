@@ -33,13 +33,3 @@ export const FormField = styled.label`
     -8px -8px 12px rgba(164, 162, 162, 0.06);
 `;
 
-export const FormInput = styled.input`
-  height: 30px;
-  padding: 3px;
-  margin-bottom: 15px;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 8px 8px 12px rgba(143, 142, 142, 0.2),
-    -8px -8px 12px rgba(27, 26, 26, 0.04);
-`;

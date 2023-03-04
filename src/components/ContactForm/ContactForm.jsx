@@ -1,6 +1,6 @@
 import { Formik } from 'formik';
 import * as Yup from 'yup';
-import { Form, FormField, FormInput } from './ContactForm.styled';
+import { Form, FormField,} from './ContactForm.styled';
 
 const ContactFormSchema = Yup.object().shape({
   name: Yup.string()
@@ -27,18 +27,13 @@ export const ContactForm = () => {
       <Form>
         <FormField>
           Name
-          <FormInput
-            type="text"
-            name="name"
-          />
+          
         </FormField>
 
         <FormField>
           Number
-          <FormInput
-            type="tel"
-            name="number"
-          />
+          
+          
         </FormField>
       </Form>
     </Formik>
