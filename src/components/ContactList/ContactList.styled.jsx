@@ -2,23 +2,14 @@ import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
+  padding-left: 30px;
 `;
 
 export const List = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding: 20px;
-  width: 400px;
-  background: rgb(244, 237, 237);
-  border-radius: 5px;
-   box-shadow: -6px -6px 14px rgba(255, 254, 254, 0.8),
-    -6px -6px 10px rgba(93, 93, 93, 0.2), 6px 6px 8px rgba(69, 68, 68, 0.075),
-    6px 6px 10px rgba(0, 0, 0, 0.15);
- 
+  gap: 10px;
+  width: 480px;
 `;
 
 export const ListItem = styled.li`

@@ -1,30 +1,24 @@
 import styled from 'styled-components';
-import { Form as FormikForm,  Field as FormikField, ErrorMessage as FormikError} from 'formik';
+import {
+  Form as FormikForm,
+  Field as FormikField,
+  ErrorMessage as FormikError,
+} from 'formik';
 
 export const Form = styled(FormikForm)`
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  gap: 12px;
-  width: 400px;
-  padding: 15px;
+  gap: 5px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
-
-  background: rgb(244, 237, 237);
-  border-radius: 5px;
-   box-shadow: -6px -6px 14px rgba(255, 254, 254, 0.8),
-    -6px -6px 10px rgba(93, 93, 93, 0.2), 6px 6px 8px rgba(69, 68, 68, 0.075),
-    6px 6px 10px rgba(0, 0, 0, 0.15);
- 
+  margin-bottom: 20px;
+  padding-left: 30px;
 `;
 
 export const FormField = styled.label`
   display: flex;
   flex-direction: column;
-  width: 350px;
+  width: 300px;
   color: #7b7979;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
@@ -32,7 +26,6 @@ export const FormField = styled.label`
   text-shadow: 8px 8px 12px rgba(174, 172, 172, 0.3),
     -8px -8px 12px rgba(164, 162, 162, 0.06);
 `;
-
 
 export const Field = styled(FormikField)`
   height: 30px;
@@ -46,16 +39,17 @@ export const Field = styled(FormikField)`
 `;
 
 export const ErrorMessage = styled(FormikError)`
-   color: #83056a;
-    font-weight: 500;
+  color: #9a0374;
+  font-weight: 500;
   font-size: 10px;
-`
+`;
 
 export const AddContactBtn = styled.button`
- margin: 0;
-  width: 250px;
+  margin: 0;
+  width: 150px;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-top: 15px;
   background: white;
   border-radius: 0.5rem;
   outline: none;
@@ -63,7 +57,7 @@ export const AddContactBtn = styled.button`
   font-weight: 700;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   text-shadow: 8px 8px 12px rgba(254, 253, 253, 0.3),
     -8px -8px 12px rgba(12, 11, 11, 0.04);
   transition: 0.2s ease-in-out;
@@ -75,6 +69,4 @@ export const AddContactBtn = styled.button`
       -2px -2px 4px rgba(255, 255, 255, 0.4),
       2px 2px 2px rgba(188, 186, 186, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
   }
-
-`
-
+`;

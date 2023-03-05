@@ -3,8 +3,9 @@ import 'modern-normalize';
 
 export const GlobalStyle = createGlobalStyle`
           body {
-            background-color: #dee2e5;
-            margin-top: 40px;
+            background-color:  rgb(234, 237, 237);
+            padding-top: 15px;
+            padding-bottom: 15px;
           }
           h1,
           h2,
@@ -26,4 +27,4 @@ export const GlobalStyle = createGlobalStyle`
             margin: 0;
           }
           
-          `
+          `;
